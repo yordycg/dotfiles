@@ -13,6 +13,12 @@ export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-15.jdk/Conte
 export GEM_HOME="$HOME/.gem"
 export GOPATH="$HOME/.go"
 
+# C++
+# need install 'clang'
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
 # ------------------------------------------------------------------------------
 # Apps
 # ------------------------------------------------------------------------------
