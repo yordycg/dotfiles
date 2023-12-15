@@ -1,0 +1,15 @@
+{
+  "showLineNumber": true,
+  "rightToLeft": false,
+  "vimMode": false,
+  "readableLineLength": false,
+  "spellcheck": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./images",
+  "showUnsupportedFiles": true,
+  "defaultViewMode": "source",
+  "newFileLocation": "current",
+  "showInlineTitle": false,
+  "showFrontmatter": true,
+  "propertiesInDocument": "source"
+}

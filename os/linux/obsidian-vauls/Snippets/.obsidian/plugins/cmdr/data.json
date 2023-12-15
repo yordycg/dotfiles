@@ -1,0 +1,58 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "global-search:open",
+      "icon": "lucide-search",
+      "name": "Search: Search in all files",
+      "mode": "desktop",
+      "color": "#0e44c4"
+    },
+    {
+      "id": "file-explorer:open",
+      "icon": "lucide-files",
+      "name": "Files: Show file explorer",
+      "mode": "desktop",
+      "color": "#0e44c4"
+    },
+    {
+      "id": "graph:open",
+      "icon": "lucide-git-fork",
+      "name": "Graph view: Open graph view",
+      "mode": "desktop",
+      "color": "#12ede9"
+    },
+    {
+      "id": "graph:open-local",
+      "icon": "lucide-git-fork",
+      "name": "Graph view: Open local graph",
+      "mode": "desktop",
+      "color": "#12ede9"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": "14",
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

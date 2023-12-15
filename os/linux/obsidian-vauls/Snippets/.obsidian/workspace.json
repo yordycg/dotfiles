@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "fad1707412f4b6f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "afffed9e51d726e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1be2cd145f04fae8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming languages/nodejs/Package Manager.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1107547ff717df45",
+    "type": "split",
+    "children": [
+      {
+        "id": "957911120c0d0436",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2307f8d0bef77c0e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5fb0fd500e606cea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "[\"excalidraw-plugin\"]",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8ab5c925f79a90c6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 313.5
+  },
+  "right": {
+    "id": "f8be73b5e4a6c016",
+    "type": "split",
+    "children": [
+      {
+        "id": "40505c381bf1ecfd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93e117ffc895c1aa",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "programming languages/nodejs/Package Manager.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "40fb4c92eb2e9db8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "programming languages/nodejs/Package Manager.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "134b6ac474716820",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c0236164d5918667",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "programming languages/nodejs/Package Manager.md"
+              }
+            }
+          },
+          {
+            "id": "3fb949da87da4cc5",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "5b35c0153a5b1cb0",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "8e8378e6c9f8e16c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 363.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "workspaces:Manage workspace layouts": false,
+      "command-palette:Open command palette": true,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "cmdr:Search: Search in all files": false,
+      "cmdr:Files: Show file explorer": false,
+      "cmdr:Graph view: Open graph view": false,
+      "cmdr:Graph view: Open local graph": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian42-brat:BRAT": false,
+      "pdf-to-markdown-plugin:PDF to Markdown": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "1be2cd145f04fae8",
+  "lastOpenFiles": [
+    "programming languages/nodejs/Install NodeJS.md",
+    "terminal/Command Line.md",
+    "tools/git/Git Basic.md",
+    "tools/git/Conventional Commits.md",
+    "tools/git/Good Commit.md",
+    "tools/todoist/todoist.md",
+    "tools/todoist/a.md",
+    "tools/todoist/as.md",
+    "tools/todoist/Dentista.md",
+    "bad.md",
+    "databases/Steps to model a DB.md",
+    "programming languages/javascript/Fizz Buzz.md",
+    "programming languages/css/Below Footer.md",
+    "tools/todoist",
+    "programming languages/nodejs/expressjs/Manage Errors.md",
+    "programming languages/nodejs/expressjs/Manage JSON.md",
+    "programming languages/nodejs/expressjs/Handlebars.md",
+    "programming languages/nodejs/Package Manager.md",
+    "programming languages/html/fundamentos HTML.md",
+    "programming languages/css/Untitled.md",
+    "2023-10-22.md",
+    "databases/Untitled.md",
+    "Excalidraw/Drawing 2023-08-25 22.06.58.excalidraw.md",
+    "backend/authentication/Axios - Authentication.md",
+    "backend/server/Form Submit - Examples.md",
+    "backend/server/CORS.md",
+    "backend/HTTP/Status Code HTTP.md",
+    "backend/API RESTful/images/Abstract Protocol Flow.png",
+    "backend/API RESTful/images/Pasted image 20231011100524.png",
+    "backend/API RESTful/images",
+    "tools/problem solutions",
+    "data-structure and algorithms/big-O",
+    "data-structure and algorithms",
+    "tools/git",
+    "databases/mongodb",
+    "databases/mysql",
+    "Excalidraw",
+    "backend/Pasted image 20230825171201.png",
+    "backend/API RESTful"
+  ]
+}

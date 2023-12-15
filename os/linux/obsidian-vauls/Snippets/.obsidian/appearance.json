@@ -1,0 +1,14 @@
+{
+  "accentColor": "#088fa1",
+  "cssTheme": "Sanctum",
+  "interfaceFontFamily": "",
+  "textFontFamily": "Consolas,SFMono Nerd Font,Hack Nerd Font Mono,Hasklig,Cascadia Code PL,MesloLGL Nerd Font Mono,JetBrainsMono NFM",
+  "monospaceFontFamily": "Cascadia Code PL",
+  "baseFontSize": 16,
+  "showViewHeader": false,
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "academic-export",
+    "UI-tweaks"
+  ]
+}
