@@ -9,7 +9,7 @@ alias ...="cd ../.."
 alias ll="exa -l --icons"
 alias la="exa -la --icons"
 alias lla="exa -la --group --icons"
-alias lt="exa -tree --icons"
+alias lt="exa --tree --icons" # install tree
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
 
