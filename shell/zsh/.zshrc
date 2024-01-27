@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Aliases
+# List \ install exa
 alias ll="exa -l --icons"
 alias la="exa -la --icons"
 alias lla="exa -la --group --icons"
@@ -156,12 +157,13 @@ export CPPFLAGS="-I/usr/local/opt/llvm/include"
 # Starship prompt
 eval "$(starship init zsh)"
 
-# fnm
-export PATH="/home/yordyx/.local/share/fnm:$PATH"
-eval "`fnm env`"
-
 # homebrew - packer installer
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # fzf - useful key bindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fnm
+export PATH="/home/yordy/.local/share/fnm:$PATH"
+eval "`fnm env`"
+
