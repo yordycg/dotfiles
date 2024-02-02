@@ -25,3 +25,23 @@ git config --global color.ui "auto"
 ## Starship
 
 - Necesitamos realizar un _symlink_ a la carpeta '/home/name-user/.config' 
+
+## Instalar fuentes en ubuntu
+
+- Crear un directorio `.fonts` en el `home`.
+```bash
+mkdir .fonts && cd .fonts
+```
+- Reconstruir el cache de las fuentes: `fc-cache -f -v`
+
+## Neovim
+
+- Instalar neovim: `brew install neovim`
+- Instalar complementos:
+```bash
+brew install fd
+brew install ripgrep
+brew install lazygit
+brew install gcc
+```
+- Usar una **NerdFont**.
