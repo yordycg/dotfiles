@@ -1,5 +1,9 @@
 # Installation
 
+## Homebrew
+
+- Instalar: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
 ## Git
 
 - Instalar git
@@ -21,6 +25,18 @@ git config --global color.ui "auto"
 
 - En la terminal ejecutar: `ssh-keygen -t ed25519 -C "<tu_email@email.com>"`
 - Copiar la llave y agregar al github.
+
+## fnm
+
+- Instalar: `brew install fnm`
+- Instalar ultima version: `fnm install --lts`
+
+## Alacritty
+
+- Actualizar: `sudo apt update && sudo apt upgrade`
+- Agregar **Alacritty PPA Repository**: `sudo add-apt-repository ppa:aslatter/ppa -y`
+- Instalar **Alacritty**: `sudo apt install alacritty`
+- Crear _soft link_ en `/home/<user>/.config/alacritty`
 
 ## Starship
 
