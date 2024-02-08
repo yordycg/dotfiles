@@ -30,13 +30,13 @@ git config --global color.ui "auto"
 
 - Instalar: `brew install fnm`
 - Instalar ultima version: `fnm install --lts`
+- Agregar a la configuracion de la shell: `eval "$(fnm env --use-on-cd)"`
 
 ## Alacritty
 
-- Actualizar: `sudo apt update && sudo apt upgrade`
-- Agregar **Alacritty PPA Repository**: `sudo add-apt-repository ppa:aslatter/ppa -y`
-- Instalar **Alacritty**: `sudo apt install alacritty`
+- Ver video en youtube!
 - Crear _soft link_ en `/home/<user>/.config/alacritty`
+- Clonar **Alacritty-Themes**.
 
 ## Starship
 
