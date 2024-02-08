@@ -40,6 +40,8 @@ git config --global color.ui "auto"
 
 ## Starship
 
+- Instalar la ultima version `starship.rs`.
+- Agregar la inicializacion en la **shell**.
 - Necesitamos realizar un _symlink_ a la carpeta '/home/name-user/.config' 
 
 ## Instalar fuentes en ubuntu
