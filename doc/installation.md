@@ -40,9 +40,31 @@ git config --global color.ui "auto"
 
 ## Starship
 
-- Instalar la ultima version `starship.rs`.
-- Agregar la inicializacion en la **shell**.
+- Instalar la ultima version `starship.rs`
+- Agregar la inicializacion en la **shell**: `eval "$(starship init bash)"`
 - Necesitamos realizar un _symlink_ a la carpeta '/home/name-user/.config' 
+
+## Fzf
+
+- Instalar: `brew install fzf`
+
+## Zoxide
+
+- Instalar: `brew install zoxide`
+- Agregar a la **shell**: `eval "$(zoxide init bash)"`
+
+## Exa
+
+- Instalar: `sudo apt install exa`
+
+## Bat
+
+- Instalar: `brew install bat`
+
+## Tmux
+
+- Instalar: `brew install tmux`
+- 
 
 ## Instalar fuentes en ubuntu
 
