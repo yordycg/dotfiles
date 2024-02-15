@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming languages/nodejs/Package Manager.md",
+                "file": "linux/Conceptos Avanzados Ficheros y Shell en Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 313.5,
+    "collapsed": true
   },
   "right": {
     "id": "f8be73b5e4a6c016",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming languages/nodejs/Package Manager.md",
+                "file": "linux/Conceptos Avanzados Ficheros y Shell en Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming languages/nodejs/Package Manager.md",
+                "file": "linux/Conceptos Avanzados Ficheros y Shell en Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming languages/nodejs/Package Manager.md"
+                "file": "linux/Conceptos Avanzados Ficheros y Shell en Linux.md"
               }
             }
           },
@@ -186,8 +187,12 @@
   },
   "active": "1be2cd145f04fae8",
   "lastOpenFiles": [
+    "linux/Sistema de Ficheros.md",
+    "linux/Shell de Linux.md",
+    "linux/Conceptos Avanzados Ficheros y Shell en Linux.md",
+    "linux/terminal/Command Line.md",
+    "programming languages/nodejs/Package Manager.md",
     "programming languages/nodejs/Install NodeJS.md",
-    "terminal/Command Line.md",
     "tools/git/Git Basic.md",
     "tools/git/Conventional Commits.md",
     "tools/git/Good Commit.md",
@@ -203,16 +208,12 @@
     "programming languages/nodejs/expressjs/Manage Errors.md",
     "programming languages/nodejs/expressjs/Manage JSON.md",
     "programming languages/nodejs/expressjs/Handlebars.md",
-    "programming languages/nodejs/Package Manager.md",
     "programming languages/html/fundamentos HTML.md",
     "programming languages/css/Untitled.md",
     "2023-10-22.md",
     "databases/Untitled.md",
     "Excalidraw/Drawing 2023-08-25 22.06.58.excalidraw.md",
     "backend/authentication/Axios - Authentication.md",
-    "backend/server/Form Submit - Examples.md",
-    "backend/server/CORS.md",
-    "backend/HTTP/Status Code HTTP.md",
     "backend/API RESTful/images/Abstract Protocol Flow.png",
     "backend/API RESTful/images/Pasted image 20231011100524.png",
     "backend/API RESTful/images",
