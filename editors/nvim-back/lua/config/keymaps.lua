@@ -92,7 +92,7 @@ map("n", "<C-n>", ":w %:h/", opts)
 
 map("n", "<C-P>", ':lua require("config.utils").toggle_go_test()<CR>', opts)
 
--- Others
-map("i", "<C-d>", "<C-d>zz")
-map("i", "<C-u>", "<C-u>zz")
-map("i", "<C-b>", "<C-o>de")
+-- Other
+vim.keymap.set("i", "<C-d>", "<C-d>zz")
+vim.keymap.set("i", "<C-u>", "<C-u>zz")
+vim.keymap.set("i", "<C-b>", "<C-o>de")

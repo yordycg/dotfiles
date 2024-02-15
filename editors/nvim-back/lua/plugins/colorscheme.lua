@@ -42,12 +42,9 @@ return {
     "xiyaowong/transparent.nvim",
   },
   {
-    "datsfilipe/vesper.nvim",
-  },
-  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vesper",
+      colorscheme = "catppuccin",
     },
   },
 }
