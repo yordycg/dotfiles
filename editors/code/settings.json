@@ -1,0 +1,143 @@
+{
+    // open json editor for settings
+    "workbench.settings.editor": "json",
+
+    // Theme
+    "workbench.colorTheme": "Vesper",
+    "oneDarkPro.bold": true,
+    "oneDarkPro.vivid": true,
+    "workbench.iconTheme": "symbols",
+
+    // Change font
+    "editor.fontFamily": "'Cascadia Code PL' /* 'MonoLisa', 'Dank Mono', 'SFMono Nerd Font', 'JetBrainsMono NFM', 'IosevkaTerm Nerd Font Mono'  */",
+    "scm.inputFontFamily": "Cascadia Code PL",
+    "terminal.integrated.fontFamily": "JetBrainsMono NFM",
+    "chat.editor.fontFamily": "Cascadia Code PL",
+    "debug.console.fontFamily": "Cascadia Code PL",
+    "editor.codeLensFontFamily": "Cascadia Code PL",
+    "notebook.output.fontFamily": "Cascadia Code PL",
+    "markdown.preview.fontFamily": "Cascadia Code PL",
+    "editor.inlayHints.fontFamily": "Cascadia Code PL",
+
+    // Font config
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.7,
+    "terminal.integrated.fontSize": 14,
+    "editor.fontLigatures": true,
+
+    // ui
+    "editor.minimap.enabled": false,
+    "window.commandCenter": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "window.titleBarStyle": "native",
+    "workbench.sideBar.location": "left",
+
+    // APC
+    "apc.font.family": "Lexend",
+    "apc.monospace.font.family": "Lexend",
+    "apc.activityBar": {
+        "position": "bottom",
+        "hideSettings": true,
+        "size": 30,
+        "itemSize": 30,
+        "itemMargin": 10
+    },
+    "apc.statusBar": {
+        "position": "editor-bottom",
+        "height": 30,
+        "fontSize": 12
+    },
+    "apc.electron": {
+        "titleBarStyle": "hiddenInset",
+        "trafficLightPosition": {
+            "x": 12,
+            "y": 10
+        },
+        "frame": false
+    },
+    "apc.listRow": {
+        "height": 24,
+    },
+
+    // Custom css
+    "apc.stylesheet": {
+        ".sidebar > .composite": "height: 12px !important",
+        ".title-label": "display: none !important",
+        ".title-actions": "display: none !important",
+        ".tabs-and-actions-container > .editor-actions": "display: none !important",
+        ".titlebar-center": "display: none !important",
+        ".titlebar-right": "display: none !important",
+        ".inline-tabs-placeholder": "display: nove !important",
+        // ".split-view-view .visible": "background-color: #110f17 !important"
+
+    },
+
+    // Toggle exclude files
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true,
+        "**/.next": true,
+        "**/.husky": true,
+        "**/drizzle": true,
+        "**/dist": true,
+        "**/.todo.md": true,
+        "**/.vscode": true,
+        "**/.eslintrc.cjs": true,
+        "**/.editorconfig": true,
+        "**/.gitignore": true,
+        "**/.lintstagedrc.mjs": true,
+        "**/.makdownlint.json": true,
+        "**/.makdownlintignore": true,
+        "**/.prettierignore": true,
+        "**/bun.lockb": true,
+        "**/cspell.json": true,
+        "**/package-lock.json": true,
+        "**/pnpm-lock.yaml": true,
+        "**/next-env.d.ts": true,
+        "**/postcss.config.cjs": true,
+        "**/prettier.config.js": true,
+        "**/README.md": true,
+        "**/next.config.js": true,
+        "**/tailwind.config.ts": true,
+        "**/drizzle.config.ts": true,
+        "**/migrate.ts": true,
+        "**/.env.example": true,
+    },
+
+    // Misc
+    "workbench.startupEditor": "none",
+    "explorer.compactFolders": false,
+    "editor.tabSize": 2,
+    "editor.linkedEditing": true,
+    "breadcrumbs.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "window.zoomLevel": 0,
+    "symbols.hidesExplorerArrows": false,
+    "window.menuBarVisibility": "compact",
+    "workbench.layoutControl.enabled": false,
+    "editor.rulers": [80, 120],
+    "editor.renderLineHighlight": "all",
+    "editor.semanticHighlighting.enabled": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, package-lock*, bun.lockb",
+        "tailwind.config*": "tailwind.config*, postcss.config*",
+        ".env.local": ".env*",
+        ".env": ".env*",
+        "main.cpp": "main",
+    }
+    // "workbench.editor.labelFormat": "short",
+    // "workbench.activityBar.location": "hidden",
+    // "workbench.statusBar.visible": false,
+}

@@ -1,0 +1,146 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  // ! VIM
+  // NAVIGATION
+  {
+    "key": "shift+a",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+b",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+
+  // FILE TREE
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "c",
+    "command": "filesExplorer.copy",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+    // "when": "sideBarFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "extension.advancedNewFile"
+  },
+  /// ! Others
+  // expand-region
+  {
+    "key": "ctrl+w",
+    "command": "expand_region",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "undo_expand_region",
+    "when": "editorTextFocus && editorHasSelection"
+  },
+  // others
+  {
+    "key": "ctrl+l",
+    "command": "-extension.vim_navigateCtrlL",
+    "when": "editorTextFocus && vim.active && vim.use<C-l> && !inDebugRepl"
+  },
+
+  {
+    "command": "turboConsoleLog.displayLogMessage",
+    "key": "ctrl+i"
+  },
+  {
+    "key": "ctrl ctrl",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "revealInExplorer",
+    "when": "editorTextFocus && !sideBarFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-extension.vim_ctrl+p",
+    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  }
+]
