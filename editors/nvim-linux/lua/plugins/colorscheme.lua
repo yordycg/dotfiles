@@ -374,7 +374,7 @@ return {
       -- vim.g.gruvbox_material_colors_override = { bg0 = "#121212" }
       -- vim.g.gruvbox_material_better_performance = 1
 
-      vim.cmd.colorscheme("gruvbox-material")
+      -- vim.cmd.colorscheme("gruvbox-material")
     end,
   },
   {
@@ -413,4 +413,45 @@ return {
       -- vim.cmd.colorscheme("night-owl")
     end,
   },
+  -- Transparent
+  {
+    "xiyaowong/transparent.nvim",
+  },
+  -- Onedark
+  {
+    "navarasu/onedark.nvim",
+    priority = 1000,
+    opts = {
+      style = "deep",
+      -- transparent = true,
+    }
+  },
+  -- Material
+  {
+    "marko-cerovac/material.nvim",
+    lazy = false,
+    priority = 1000,
+    init = function()
+      vim.g.material_style = "darker"
+    end
+  },
+  -- Minimal
+  {
+    "Yazeed1s/minimal.nvim",
+    lazy = true,
+  },
+  -- Vesper
+  {
+    "datsfilipe/vesper.nvim",
+  },
+  -- Zephyr
+  {
+    "nvimdev/zephyr-nvim",
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "minimal",
+    }
+  }
 }
