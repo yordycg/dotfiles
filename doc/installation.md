@@ -48,6 +48,13 @@ git config --global color.ui "auto"
 
 - Instalar: `brew install fzf`
 
+### Telescope-fzf
+
+- Solucionar error de windows
+- En directorio `nvim-data/telescope-fzf..` hacer:
+  - `make clean`.
+  - `make` - para crear el directorio **build**
+
 ## Zoxide
 
 - Instalar: `brew install zoxide`
