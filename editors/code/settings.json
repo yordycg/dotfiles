@@ -3,21 +3,21 @@
     "workbench.settings.editor": "json",
 
     // Theme
-    "workbench.colorTheme": "Vesper",
+    "workbench.colorTheme": "Henna",
     "oneDarkPro.bold": true,
     "oneDarkPro.vivid": true,
     "workbench.iconTheme": "symbols",
 
     // Change font
-    "editor.fontFamily": "'Cascadia Code PL' /* 'MonoLisa', 'Dank Mono', 'SFMono Nerd Font', 'JetBrainsMono NFM', 'IosevkaTerm Nerd Font Mono'  */",
-    "scm.inputFontFamily": "Cascadia Code PL",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font' /* 'Cascadia Code PL', 'MonoLisa', 'Dank Mono', 'SFMono Nerd Font', 'JetBrainsMono NFM', 'IosevkaTerm Nerd Font Mono'  */",
+    "scm.inputFontFamily": "JetBrainsMono Nerd Font",
     "terminal.integrated.fontFamily": "JetBrainsMono NFM",
-    "chat.editor.fontFamily": "Cascadia Code PL",
-    "debug.console.fontFamily": "Cascadia Code PL",
-    "editor.codeLensFontFamily": "Cascadia Code PL",
-    "notebook.output.fontFamily": "Cascadia Code PL",
-    "markdown.preview.fontFamily": "Cascadia Code PL",
-    "editor.inlayHints.fontFamily": "Cascadia Code PL",
+    "chat.editor.fontFamily": "JetBrainsMono Nerd Font",
+    "debug.console.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
+    "notebook.output.fontFamily": "JetBrainsMono Nerd Font",
+    "markdown.preview.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
 
     // Font config
     "editor.fontSize": 14,
@@ -32,6 +32,9 @@
     "editor.scrollbar.horizontal": "hidden",
     "window.titleBarStyle": "native",
     "workbench.sideBar.location": "left",
+    // cursor blinking
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
 
     // APC
     "apc.font.family": "Lexend",
@@ -55,11 +58,15 @@
             "y": 10
         },
         "frame": false
+        // Transparent
+        // "opacity": 0.95,
+        // "transparent": true,
+        // "backgroundColor": "#00000000",
+        // "vibrancy": "ultra-dark"
     },
     "apc.listRow": {
-        "height": 24,
+        "height": 24
     },
-
     // Custom css
     "apc.stylesheet": {
         ".sidebar > .composite": "height: 12px !important",
@@ -70,7 +77,8 @@
         ".titlebar-right": "display: none !important",
         ".inline-tabs-placeholder": "display: nove !important",
         // ".split-view-view .visible": "background-color: #110f17 !important"
-
+        // cursor blinking
+        ".monaco-editor .cursor": "background: #ffffffaa !important; box-shadow: 0 0 70px 5px #ffffff, #ffffff 0px 0px 34px 1px; color: [#161616](https://github.com/AlexOwl/vscode-transparent-color-theme/issues/161616) !important"
     },
 
     // Toggle exclude files
@@ -107,7 +115,7 @@
         "**/tailwind.config.ts": true,
         "**/drizzle.config.ts": true,
         "**/migrate.ts": true,
-        "**/.env.example": true,
+        "**/.env.example": true
     },
 
     // Misc
@@ -126,7 +134,10 @@
     "symbols.hidesExplorerArrows": false,
     "window.menuBarVisibility": "compact",
     "workbench.layoutControl.enabled": false,
-    "editor.rulers": [80, 120],
+    "editor.rulers": [
+        80,
+        120
+    ],
     "editor.renderLineHighlight": "all",
     "editor.semanticHighlighting.enabled": false,
     "explorer.fileNesting.enabled": true,
@@ -135,7 +146,7 @@
         "tailwind.config*": "tailwind.config*, postcss.config*",
         ".env.local": ".env*",
         ".env": ".env*",
-        "main.cpp": "main",
+        "main.cpp": "main"
     }
     // "workbench.editor.labelFormat": "short",
     // "workbench.activityBar.location": "hidden",
