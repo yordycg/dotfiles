@@ -19,6 +19,9 @@ return {
         -- c++
         "clangd",
         "clang-format",
+        -- c#
+        -- "csharp-language-server",
+        "csharp_ls",
       },
     },
   },
