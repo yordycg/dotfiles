@@ -92,3 +92,9 @@ brew install lazygit
 brew install gcc
 ```
 - Usar una **NerdFont**.
+
+### C# - nvim
+
+- Instalar dotnet (ubuntu): `brew install dotnet`
+- Instalar el servidor (mason): `csharp-language-server | csharp_ls`
+- Instalar el resaltado de sintaxis (treesiter): `c_sharp`
