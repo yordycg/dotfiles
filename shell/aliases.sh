@@ -9,10 +9,11 @@ alias ....="cd ../../.."
 # alias la="ls -la"
 
 # Exa | install exa
-alias ll="exa -l --icons --git -a"
-alias la="exa -la --icons --git"
-alias lla="exa -la --group --icons --git"
-alias lt="exa --tree --level=3 --long --icons --git" # install tree
+alias ls="exa --icons"
+alias ll="exa -l --icons"
+alias la="exa -la --icons"
+# alias lla="exa -la --group --icons"
+alias lt="exa --tree --level=3 --long --icons" # install tree
 
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
