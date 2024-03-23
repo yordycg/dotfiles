@@ -1,50 +1,87 @@
-export DOTFILES_PATH="/home/yordyx/.dotfiles"
-export DOTLY_PATH="$DOTFILES_PATH/modules/dotly"
-export DOTLY_THEME="codely"
+# ----------------------------------------------------------------
+# ~/.bashrc
+# ----------------------------------------------------------------
 
-source "$DOTFILES_PATH/shell/init.sh"
+# If not running interactively, don't do anything
+[[ $- != *i* ]] $$ return
 
-EXPORTED_PATH=$(
-  IFS=":"
-  echo "${path[*]}"
-)
-export PATH="$PATH:$EXPORTED_PATH"
+# Set to superior editing mode
+set -o vi
 
-themes_paths=(
-  "$DOTFILES_PATH/shell/bash/themes"
-  "$DOTLY_PATH/shell/bash/themes"
-)
+# Keybinds
+bind -x '"\C-l":clear'
 
-for THEME_PATH in ${themes_paths[@]}; do
-  THEME_PATH="${THEME_PATH}/$DOTLY_THEME.sh"
-  [ -f "$THEME_PATH" ] && source "$THEME_PATH" && THEME_COMMAND="${PROMPT_COMMAND:-}" && break
-done
+# ----------------------------------------------------------------
+# Environment Variables
+# ----------------------------------------------------------------
 
-if [[ "$(ps -p $$ -ocomm=)" =~ (bash$) ]]; then
-  __right_prompt() {
-    RIGHT_PROMPT=""
-    [[ -n $RPS1 ]] && RIGHT_PROMPT=$RPS1 || RIGHT_PROMPT=$RPROMPT
-    if [[ -n $RIGHT_PROMPT ]]; then
-      n=$(($COLUMNS - ${#RIGHT_PROMPT}))
-      printf "%${n}s$RIGHT_PROMPT\\r"
-    fi
+export VISUAL=nvim
+export EDITOR=nvim
 
-    if
-      [[ -n "${THEME_COMMAND:-}" ]] &&
-      declare -F "${THEME_COMMAND:-}" &> /dev/null
-    then
-      "${THEME_COMMAND:-}"
-    fi
-  }
-  export PROMPT_COMMAND="__right_prompt"
-fi
+# config
+export BROWSER="firefox"
 
-for bash_file in "$DOTLY_PATH"/shell/bash/completions/_*; do
-  source "$bash_file"
-done
+# directories
+export REPOS="$HOME/repos"
+export GITUSER="yordycg"
+export GHREPOS="$REPOS/github.com/$GITUSER"
+export DOTFILES="$GHREPOS/dotfiles"
+# export SCRIPTS="$DOTFILES/scripts" # aun no tengo scripts
+export SECOND_BRAIN="$REPOS/obsidian_notes"
 
-if [ -n "$(ls -A "$DOTFILES_PATH/shell/bash/completions/")" ]; then
-  for bash_file in "$DOTFILES_PATH"/shell/bash/completions/_*; do
-    source "$bash_file"
-  done
+
+# ----------------------------------------------------------------
+# History
+# ----------------------------------------------------------------
+
+export HISTFILE=~/.histfile
+export HISTSIZE=25000
+export SAVEHIST=25000
+export HISTCONTROL=ignorespace
+
+# ----------------------------------------------------------------
+# Functions
+# ----------------------------------------------------------------
+
+# ----------------------------------------------------------------
+# Languages
+# ----------------------------------------------------------------
+
+# c# - dotnet
+export DOTNET_ROOT="/home/linuxbrew/.linuxbrew/Cellar/dotnet/8.0.1/libexec"
+
+# c++ | need install 'clang'
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+
+# ----------------------------------------------------------------
+# Eval list
+# ----------------------------------------------------------------
+
+# prompt
+eval "$(starship init bash)"
+
+# homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# fnm
+eval "$(fnm env --use-on-cd)"
+. "$HOME/.cargo/env"
+
+# zoxide
+eval "$(zoxide init bash)"
+
+# rofi scripts
+echo "PATH=$PATH:~/.config/rofi/scripts/" >> ~/.profile
+
+# fzf
+eval "$(fzf --bash)"
+
+# ----------------------------------------------------------------
+# Alias
+# ----------------------------------------------------------------
+if [[ -f $DOTFILES/shell/aliases.sh ]]; then
+  . $DOTFILES/shell/aliases.sh
 fi
