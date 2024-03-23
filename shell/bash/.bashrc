@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] $$ return
+[[ $- != *i* ]] && return
 
 # Set to superior editing mode
 set -o vi
@@ -25,10 +25,10 @@ export BROWSER="firefox"
 export REPOS="$HOME/repos"
 export GITUSER="yordycg"
 export GHREPOS="$REPOS/github.com/$GITUSER"
-export DOTFILES="$GHREPOS/dotfiles"
+# export DOTFILES="$GHREPOS/dotfiles"
+export DOTFILES="$REPOS/dotfiles"
 # export SCRIPTS="$DOTFILES/scripts" # aun no tengo scripts
 export SECOND_BRAIN="$REPOS/obsidian_notes"
-
 
 # ----------------------------------------------------------------
 # History
@@ -55,7 +55,6 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
-
 # ----------------------------------------------------------------
 # Eval list
 # ----------------------------------------------------------------
@@ -74,7 +73,7 @@ eval "$(fnm env --use-on-cd)"
 eval "$(zoxide init bash)"
 
 # rofi scripts
-echo "PATH=$PATH:~/.config/rofi/scripts/" >> ~/.profile
+echo "PATH=$PATH:~/.config/rofi/scripts/" >>~/.profile
 
 # fzf
 eval "$(fzf --bash)"
@@ -83,5 +82,5 @@ eval "$(fzf --bash)"
 # Alias
 # ----------------------------------------------------------------
 if [[ -f $DOTFILES/shell/aliases.sh ]]; then
-  . $DOTFILES/shell/aliases.sh
+	. $DOTFILES/shell/aliases.sh
 fi
