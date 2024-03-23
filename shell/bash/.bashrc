@@ -76,7 +76,7 @@ eval "$(zoxide init bash)"
 echo "PATH=$PATH:~/.config/rofi/scripts/" >>~/.profile
 
 # fzf
-eval "$(fzf bash)"
+eval "$(fzf --bash)"
 
 # ----------------------------------------------------------------
 # Alias
