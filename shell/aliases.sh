@@ -37,12 +37,6 @@ alias gl="git pretty-log"
 alias gg="git log --graph --pretty=format:'%C(bold)%h%Creset%C(magenta)%d%Creset %s %C(yellow)<%an> %C(cyan)(%cr)%Creset' --abbrev-commit --date=relative"
 
 # Utils
-alias k='kill -9'
-alias i.='(idea $PWD &>/dev/null &)'
-alias c.='(code $PWD &>/dev/null &)'
-alias o.='open .'
-alias up='dot package update_all'
-
 alias setup="mkdir \"$1\" && cd \"$1\""
 alias ali="$EDITOR $DOTFILES/shell/aliases.sh"
 alias zshrc="$EDITOR ~/.zshrc"
