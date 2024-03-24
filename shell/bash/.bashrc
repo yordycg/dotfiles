@@ -67,7 +67,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # fnm
 eval "$(fnm env --use-on-cd)"
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 # zoxide
 eval "$(zoxide init bash)"
