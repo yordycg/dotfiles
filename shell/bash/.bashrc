@@ -43,6 +43,10 @@ export HISTCONTROL=ignorespace
 # Functions
 # ----------------------------------------------------------------
 
+function superupgrade {
+	sudo sh -c 'pacman -Syu && paccache -r && paccache - ruk0'
+}
+
 # ----------------------------------------------------------------
 # Languages
 # ----------------------------------------------------------------
@@ -55,6 +59,91 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
+# go
+if command -v go >/dev/null 2>&1; then
+	export GOPATH="${HOME}/.go"
+	if ! [[ "${PATH}" =~ :?${GOPATH}:? ]]; then
+		export PATH="${GOPATH}/bin:${PATH}"
+	fi
+fi
+
+# ruby
+if command -v ruby >/dev/null 2>&1; then
+	GEM_HOME=$(gem env user_gemhome)
+	export GEM_HOME
+	if ! [[ "${PATH}" =~ :?${GEM_HOME}/bin:? ]]; then
+		PATH="${GEM_HOME}/bin:${PATH}"
+		export PATH
+	fi
+fi
+
+# rust
+if command -v cargo >/dev/null 2>&1; then
+	if ! [[ "${PATH}" =~ :?${HOME}/.cargo/bin:? ]]; then
+		export PATH="${HOME}/.cargo/bin:${PATH}"
+	fi
+fi
+
+if command -v luarocks >/dev/null 2>&1; then
+	if ! [[ "${PATH}" =~ :?${HOME}/.luarocks/bin:? ]]; then
+		export PATH="${HOME}/.luarocks/bin:${PATH}"
+	fi
+fi
+
+# TODO - es posible eliminar hasta "Eval list"
+
+# npm
+if command -v npm >/dev/null 2>&1; then
+	export NPM_CONFIG_PREFIX="${HOME}/.npm"
+	if ! [[ "${PATH}" =~ :?${HOME}/.npm/bin:? ]]; then
+		export PATH="${HOME}/.npm/bin:${PATH}"
+	fi
+fi
+
+# R
+if command -v R Rscript >/dev/null 2>&1; then
+	R_LIBS_USER="$(Rscript --version)"
+	R_LIBS_USER="${R_LIBS_USER%% ([0-9\-]*)}"
+	R_LIBS_USER="${HOME}/.R/${R_LIBS_USER##Rscript (R) version }"
+	if [ -n "${R_LIBS_USER}" ]; then
+		export R_LIBS_USER
+		if ! [ -d "${R_LIBS_USER}" ]; then
+			mkdir -p "${R_LIBS_USER}"
+		fi
+		alias R='R --no-save '
+		if [ -d /usr/share/mathjax ]; then
+			export RMARKDOWN_MATHJAX_PATH=/usr/share/mathjax
+		fi
+	fi
+fi
+
+# beet autocompletion
+if command -v beet >/dev/null 2>&1; then
+	if ! [ -f "/usr/share/bash-completion/completions/beet" ] &&
+		! [ -f "${HOME}/.local/share/bash-completion/completions/beet" ]; then
+		eval "$(beet completion)"
+	fi
+fi
+
+# custom scripts
+if ! [[ "${PATH}" =~ :?${HOME}/.scripts:? ]]; then
+	export PATH="${HOME}/.scripts:${PATH}"
+fi
+
+# local executables
+if ! [[ "${PATH}" =~ :?${HOME}/.local/bin:? ]]; then
+	export PATH="${HOME}/.local/bin:${PATH}"
+fi
+
+# local libraries
+if ! [[ "${LD_LIBRARY_PATH}" =~ :?/usr/local/lib:? ]]; then
+	LD_LIBRARY_PATH="/usr/local/lib:${LD_LIBRARY_PATH}"
+fi
+if ! [[ "${LD_LIBRARY_PATH}" =~ :?${HOME}/.local/lib:? ]]; then
+	LD_LIBRARY_PATH="${HOME}/.local/lib:${LD_LIBRARY_PATH}"
+fi
+export LD_LIBRARY_PATH
+
 # ----------------------------------------------------------------
 # Eval list
 # ----------------------------------------------------------------
@@ -63,17 +152,16 @@ export CPPFLAGS="-I/usr/local/opt/llvm/include"
 eval "$(starship init bash)"
 
 # homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # fnm
 eval "$(fnm env --use-on-cd)"
-# . "$HOME/.cargo/env"
 
 # zoxide
 eval "$(zoxide init bash)"
 
 # rofi scripts
-echo "PATH=$PATH:~/.config/rofi/scripts/" >>~/.profile
+# echo "PATH=$PATH:~/.config/rofi/scripts/" >>~/.profile
 
 # fzf
 eval "$(fzf --bash)"

@@ -9,11 +9,11 @@ alias ....="cd ../../.."
 # alias la="ls -la"
 
 # Exa | install exa
-alias ls="exa --icons"
+alias ls="exa -a --icons"
 alias ll="exa -l --icons"
 alias la="exa -la --icons"
 # alias lla="exa -la --group --icons"
-alias lt="exa --tree --level=3 --long --icons" # install tree
+alias lt="exa -a --tree --level=3 --long --icons" # install tree
 
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
@@ -21,8 +21,9 @@ alias dotfiles='cd $DOTFILES_PATH'
 # Git
 alias g="git"
 alias gcl="git clone"
+alias ga="git add"
 alias gaa="git add -A"
-alias gc="git commit"
+alias gc="git commit -m"
 alias gca="git add --all && git commit --amend --no-edit"
 alias gco="git checkout"
 alias gd="git pretty-diff"
@@ -47,9 +48,12 @@ alias so="source ~/.bashrc"
 alias t="tmux"
 alias c="clear"
 alias x="exit"
-alias bat="batcat" # instalar desde 'bat/github'
+# alias bat="batcat" # instalar desde 'bat/github'
+alias nf="neofetch"
+alias wifi="nmtui"
 
 # Search
+alias grep="grep --color=auto"
 alias findd="ls ~/ | grep $1"
 alias search="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}' | xargs nvim"
 
